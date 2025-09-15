@@ -29,7 +29,7 @@ Option 2: Run in Portainer
 <br><br>
 ## Usage
 
-Once setup, access ports from 8000-8007 to access each component of the service.
+Once setup, access ports from 8000-8010 to access each component of the service.
 
 [8001](http://127.0.0.1:8001) - Baz <br>
 [8002](http://127.0.0.1:8002)  - Hom <br>
