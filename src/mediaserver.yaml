@@ -1,0 +1,157 @@
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - radarr_config:/config
+      - shared_data:/media
+    ports:
+      - "8005:7878"
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:amd64-latest
+    container_name: sonarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - sonarr_config:/config
+      - shared_data:/media
+    ports:
+      - "8006:8989"
+    restart: unless-stopped
+
+  lidarr:
+    image: lscr.io/linuxserver/lidarr:latest
+    container_name: lidarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - lidarr_config:/config
+      - shared_data:/media
+    ports:
+      - "8003:8686"
+    restart: unless-stopped
+
+  bazarr:
+    image: hotio/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - bazarr_config:/config
+      - shared_data:/media
+    ports:
+      - "8001:6767"
+    restart: unless-stopped
+
+  qbittorrentvpn:
+    image: markusmcnugen/qbittorrentvpn
+    container_name: qbittorrent-vpn
+    privileged: true
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - LAN_NETWORK=${LAN_NETWORK}
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
+      - WIREGUARD_ADDRESSES=${WIREGUARD_ADDRESSES}
+      - WIREGUARD_PEERS=${WIREGUARD_PEERS}
+    volumes:
+      - qbittorrent_config:/config
+      - shared_data:/media
+    ports:
+      - "8008:8080"
+    restart: unless-stopped
+
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - jellyfin_config:/config
+      - shared_data:/media
+    devices:
+      - /dev/dri:/dev/dri
+    ports:
+      - "8009:8096"
+      - "8011:8920"
+    restart: unless-stopped
+
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    environment:
+      - LOG_LEVEL=info
+      - TZ=${TZ}
+    volumes:
+      - jellyseerr_config:/app/config
+    ports:
+      - "8010:5055"
+    restart: unless-stopped
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - prowlarr_config:/config
+    ports:
+      - "8004:9696"
+    restart: unless-stopped
+
+  homarr:
+    image: ghcr.io/homarr-labs/homarr:latest
+    container_name: homarr
+    environment:
+      - SECRET_ENCRYPTION_KEY=${HOMARR_SECRET}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - homarr_config:/app/data/configs
+    ports:
+      - "8002:7575"
+    restart: unless-stopped
+
+  stash:
+    image: stashapp/stash:latest
+    container_name: stash
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - stash_config:/root/.stash
+      - shared_data:/media:ro
+    ports:
+      - "8007:6699"
+    restart: unless-stopped
+
+volumes:
+  shared_data:
+  radarr_config:
+  sonarr_config:
+  lidarr_config:
+  bazarr_config:
+  qbittorrent_config:
+  jellyfin_config:
+  jellyseerr_config:
+  prowlarr_config:
+  homarr_config:
+  stash_config:
