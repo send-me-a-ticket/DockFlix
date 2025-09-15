@@ -18,7 +18,7 @@
 <br><br>
 ## Install
 
-Option 1: Run in terminal after navigating to downloaded src path -
+Option 1: Run in terminal after navigating to downloaded src path - <br>
 `docker compose -f ./mediaserver.yaml --env-file ./mediaserver.env up -d`
 
 Option 2: Run in Portainer
