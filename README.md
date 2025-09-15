@@ -1,7 +1,7 @@
 # DockFlix
 #### Movies, Music, Shows and more for minimum cost.
 #### Leverage Proton VPN free tier for security and privacy.
-#### Stream popular media at will.
+#### Stream popular media on user demand.
 
 <br><br>
 ## Prequisite
@@ -20,6 +20,20 @@ Option 1: Run in terminal
 Option 2: Run in Portainer
 1. Create a new stack, copy contents from `mediaserver.yaml`
 2. Manually create ENV entries from `mediaserver.env`
+
+Once setup, access ports from 8000-8007 to access each component of the service.
+
+8001 - Baz
+8002 - Hom
+8003 - Lid
+8004 - Prowl
+8005 - Rad
+8006 - Son
+8007 - Stash
+8008 - qBT
+8009 - Jellyfin
+8010 - JellySeer
+
 
 <br><br>
 ## Disclaimer
