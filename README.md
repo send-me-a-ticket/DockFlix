@@ -12,7 +12,7 @@
 4. Update `mediaserver.env` file to include the `.conf` values from `Step 2`.
 
 <br><br>
-## Usage
+## Install
 
 Option 1: Run in terminal
 `docker compose -f ./mediaserver.yaml --env-file ./mediaserver.env up -d`
@@ -20,6 +20,10 @@ Option 1: Run in terminal
 Option 2: Run in Portainer
 1. Create a new stack, copy contents from `mediaserver.yaml`
 2. Manually create ENV entries from `mediaserver.env`
+
+
+<br><br>
+## Usage
 
 Once setup, access ports from 8000-8007 to access each component of the service.
 
