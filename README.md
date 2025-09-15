@@ -43,7 +43,7 @@ Once setup, access ports from 8000-8010 to access each component of the service.
 [8009](http://127.0.0.1:8009)  - Jellyfin <br>
 [8010](http://127.0.0.1:8010)  - JellySeer
 
-Now, you can setup connections between different tools to each other.
+Now, you can setup connections between different tools to each other, ports as above.
 
 Recommended to use hostname `host.docker.internal` when configuring connections between different tools.
 
