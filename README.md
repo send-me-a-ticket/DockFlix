@@ -19,7 +19,7 @@ Option 1: Run in terminal
 
 Option 2: Run in Portainer
 1. Create a new stack, copy contents from `mediaserver.yaml`
-2. Manually create ENV entries from `mediaserver.env`
+2. Create ENV entries from `mediaserver.env`
 
 
 <br><br>
