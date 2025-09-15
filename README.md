@@ -22,7 +22,7 @@ This is designed to be a easy to deploy and dispose media server, where you do n
 Option 1: Run in terminal after navigating to downloaded src path - <br>
 ```docker compose -f ./mediaserver.yaml --env-file ./mediaserver.env up -d```
 
-Option 2: Run in Portainer (install addon for Docker Desktop: [here](https://hub.docker.com/extensions/portainer/portainer-docker-extension))
+Option 2: Run in Portainer (Click [here](https://hub.docker.com/extensions/portainer/portainer-docker-extension) to install addon for Docker Desktop)
 1. Create a new stack, copy contents from `mediaserver.yaml`
 2. Create ENV entries from `mediaserver.env`
 
