@@ -12,6 +12,7 @@ This is designed to be a easy to deploy and dispose media server, where you do n
 <br>&emsp;&emsp; Linux [Link](https://github.com/docker/docker-install)
 <br>&emsp;&emsp; MacOS [Link](https://formulae.brew.sh/formula/docker)
 
+2. [Download this repository](https://github.com/send-me-a-ticket/DockFlix/archive/refs/heads/main.zip)
 3. Create or use ProtonVPN Account.
 <br>&emsp;&emsp; Get VPN configuration file: [account.protonvpn.com/downloads](https://account.protonvpn.com/downloads)
 4. Update `mediaserver.env` file to include the `.conf` values from `Step 2`.
