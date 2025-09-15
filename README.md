@@ -7,7 +7,11 @@
 ## Prequisite
 
 1. Docker should be installed.
-2. Create or use ProtonVPN Account.
+<br>&emsp;&emsp; Windows [Link](https://apps.microsoft.com/detail/xp8cbj40xlbwkx)
+<br>&emsp;&emsp; Linux [Link](https://github.com/docker/docker-install)
+<br>&emsp;&emsp; MacOS [Link](https://formulae.brew.sh/formula/docker)
+
+3. Create or use ProtonVPN Account.
 <br>&emsp;&emsp; Get VPN configuration file: [account.protonvpn.com/downloads](https://account.protonvpn.com/downloads)
 4. Update `mediaserver.env` file to include the `.conf` values from `Step 2`.
 
