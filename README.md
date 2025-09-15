@@ -2,6 +2,7 @@
 #### Movies, Music, Shows and more for minimum cost.
 #### Leverage Proton VPN free tier for security and privacy.
 #### Stream popular media on user demand.
+This is designed to be a easy to deploy and dispose media server, where you do not really care about storage and management of media, just request and stream.
 
 <br><br>
 ## Prequisite
@@ -45,7 +46,6 @@ Once setup, access ports from 8000-8010 to access each component of the service.
 Now, you can setup connections between different tools to each other.
 
 Recommended to use hostname `host.docker.internal` when configuring connections between different tools.
-
 
 
 <br><br>
