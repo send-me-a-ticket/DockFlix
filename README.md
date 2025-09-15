@@ -23,15 +23,15 @@ Option 2: Run in Portainer
 
 Once setup, access ports from 8000-8007 to access each component of the service.
 
-8001 - Baz
-8002 - Hom
-8003 - Lid
-8004 - Prowl
-8005 - Rad
-8006 - Son
-8007 - Stash
-8008 - qBT
-8009 - Jellyfin
+8001 - Baz <br>
+8002 - Hom <br>
+8003 - Lid <br>
+8004 - Prowl <br>
+8005 - Rad <br>
+8006 - Son <br>
+8007 - Stash <br>
+8008 - qBT <br>
+8009 - Jellyfin <br>
 8010 - JellySeer
 
 
