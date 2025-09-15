@@ -31,16 +31,16 @@ Option 2: Run in Portainer
 
 Once setup, access ports from 8000-8007 to access each component of the service.
 
-[8001](https://127.0.0.1:8001) - Baz <br>
-[8002](https://127.0.0.1:8002)  - Hom <br>
-[8003](https://127.0.0.1:8003)  - Lid <br>
-[8004](https://127.0.0.1:8004)  - Prowl <br>
-[8005](https://127.0.0.1:8005)  - Rad <br>
-[8006](https://127.0.0.1:8006)  - Son <br>
-[8007](https://127.0.0.1:8007)  - Stash <br>
-[8008](https://127.0.0.1:8008)  - qBT <br>
-[8009](https://127.0.0.1:8009)  - Jellyfin <br>
-[8010](https://127.0.0.1:8010)  - JellySeer
+[8001](http://127.0.0.1:8001) - Baz <br>
+[8002](http://127.0.0.1:8002)  - Hom <br>
+[8003](http://127.0.0.1:8003)  - Lid <br>
+[8004](http://127.0.0.1:8004)  - Prowl <br>
+[8005](http://127.0.0.1:8005)  - Rad <br>
+[8006](http://127.0.0.1:8006)  - Son <br>
+[8007](http://127.0.0.1:8007)  - Stash <br>
+[8008](http://127.0.0.1:8008)  - qBT <br>
+[8009](http://127.0.0.1:8009)  - Jellyfin <br>
+[8010](http://127.0.0.1:8010)  - JellySeer
 
 
 <br><br>
